@@ -2506,7 +2506,7 @@
     "tol": 0.01,
     "choices": null,
     "correct": null,
-    "worked": "Taxed share = 22.65% / 30% = 75.5%, so long-term (untaxed) = 24.5%. (Damodaran's key carries the ex-dividend price as $23.1935, which rounds this to 25%.)",
+    "worked": "Taxed share = 22.65% / 30% = 75.51%, so long-term (untaxed) = 24.49%. (Damodaran's key carries the ex-dividend price as $23.1935, which rounds this to 25%.)",
     "traps": [
      {
       "value": 75.5,
@@ -2515,7 +2515,7 @@
     ],
     "choice_feedback": null,
     "tol_abs": 0.3,
-    "explain_simple": "**What this is asking:** What share of the typical investor's capital gains (profits from price rises) are long term, meaning held more than a year?\n\n**The idea:** Short-term gains are taxed at 30%; long-term gains are tax-free. The blended rate the typical investor pays, 22.65% from part b, is a mix of the two. It's like a bill where some items carry 30% tax and others carry none: the overall rate tells you how much was in each group.\n\n**Step by step:**\n1. Share of gains that are taxed (short term) = blended rate / short-term rate = 22.65% / 30% = 75.5%.\n2. The rest is long term and untaxed: 100% - 75.5% = 24.5%. (Damodaran's answer key rounds this to 25% because it uses a slightly more precise price.)\n\n**Watch out:** 75.5% is the short-term share. The question asks for the long-term share."
+    "explain_simple": "**What this is asking:** What share of the typical investor's capital gains (profits from price rises) are long term, meaning held more than a year?\n\n**The idea:** Short-term gains are taxed at 30%; long-term gains are tax-free. The blended rate the typical investor pays, 22.65% from part b, is a mix of the two. It's like a bill where some items carry 30% tax and others carry none: the overall rate tells you how much was in each group.\n\n**Step by step:**\n1. Share of gains that are taxed (short term) = blended rate / short-term rate = 22.65% / 30% = 75.51%.\n2. The rest is long term and untaxed: 100% - 75.51% = 24.49%. (Damodaran's answer key rounds this to 25% because it uses a slightly more precise price.)\n\n**Watch out:** 75.51% is the short-term share. The question asks for the long-term share."
    }
   ],
   "intuition": "Run the ex-dividend logic backwards: the observed drop tells you the tax gap between dividends and gains for the typical holder. Dividends here are always taxed at 30%, so a blended capital gains rate below 30% must come from the share of gains that are long term and untaxed.",

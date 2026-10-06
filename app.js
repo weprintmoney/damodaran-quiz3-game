@@ -76,7 +76,7 @@
     const d = abs >= 1000 ? 0 : abs >= 100 ? 1 : abs >= 1 ? 2 : 4;
     const s = Number(n).toLocaleString("en-US", { maximumFractionDigits: d });
     if (unit === "%") return s + "%";
-    if (unit && unit.startsWith("$")) return "$" + s + (unit.length > 1 ? " " + unit.slice(1).replace(/^\s*/, "") : "");
+    if (unit && unit.startsWith("$")) return (n < 0 ? "−$" + s.replace("-", "") : "$" + s) + (unit.length > 1 ? " " + unit.slice(1).replace(/^\s*/, "") : "");
     return unit ? s + " " + unit : s;
   }
   function parseNum(raw, step) {
